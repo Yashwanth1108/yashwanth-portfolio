@@ -1,0 +1,41 @@
+/* Scroll Up Button - Hidden by Default */
+.scrollup {
+  position: fixed;
+  right: 2.5rem;
+  bottom: -20%; /* Hidden initially */
+  background-color: var(--title-color);
+  opacity: 0.8;
+  padding: 0.5rem 0.7rem;
+  border-radius: 0.5rem;
+  z-index: var(--z-tooltip);
+  cursor: pointer;
+  transition: bottom 0.4s, background-color 0.3s, opacity 0.3s;
+}
+
+.scrollup__icon {
+  font-size: 1.5rem;
+  color: white; /* Or use your desired color */
+  transition: color 0.3s;
+}
+
+/* Optional: Change color on hover */
+.scrollup:hover .scrollup__icon {
+  color: var(--first-color); /* Use your theme color variable or a hex code */
+}
+
+/* Show Scroll Button when page is scrolled */
+.show-scroll {
+  bottom: 3rem;
+}
+
+/* Responsive Positioning for Small Screens */
+@media screen and (max-width: 480px) {
+  .scrollup {
+    right: 1.5rem;
+    padding: 0.4rem 0.6rem;
+  }
+
+  .scroll__icon {
+    font-size: 1.25rem;
+  }
+}

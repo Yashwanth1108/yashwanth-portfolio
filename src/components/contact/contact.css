@@ -1,0 +1,103 @@
+.contact__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 3rem;
+}
+
+.contact__title {
+  text-align: center;
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-medium);
+  margin-bottom: var(--mb-1-5);
+}
+
+.contact__info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.contact__card {
+  background-color: var(--container-color);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  text-align: center;
+  width: 280px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.contact__card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.contact__card-icon {
+  font-size: 2rem;
+  color: var(--title-color);
+  margin-bottom: var(--mb-0-25);
+}
+
+.contact__card-title,
+.contact__card-data {
+  font-size: var(--small-font-size);
+}
+
+.contact__card-data {
+  display: block;
+  margin-bottom: var(--mb-0-75);
+}
+
+.contact__button {
+  color: var(--text-color);
+  font-size: var(--small-font-size);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 0.25rem;
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+
+.contact__button:hover {
+  color: var(--title-color);
+}
+
+/* Small devices (phones) */
+@media screen and (max-width: 576px) {
+  .contact__info {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact__card {
+    width: 100%;
+    max-width: 320px;
+  }
+}
+
+/* Medium devices (tablets) */
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  .contact__info {
+    gap: 1.5rem;
+  }
+
+  .contact__card {
+    width: 45%;
+  }
+}
+
+/* Large devices (desktops) */
+@media screen and (min-width: 993px) {
+  .contact__info {
+    max-width: 1000px;
+  }
+
+  .contact__card {
+    width: 280px;
+  }
+}
