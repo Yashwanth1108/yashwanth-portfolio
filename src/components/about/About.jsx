@@ -1,7 +1,9 @@
 import AboutImg from "../../assets/about.jpg";
-import YashResume from "../../assets/Yashwanth Sai HR Resume2.O.pdf";
 import Info from "./Info";
 import "./about.css";
+
+const resumeViewLink =
+  "https://drive.google.com/file/d/10jGrs4p3Q4tU3yDmbgTYEgkzz8gIgd_I/view?usp=sharing";
 
 const About = () => {
   return (
@@ -17,8 +19,13 @@ const About = () => {
           <p className="about__description">
             Frontend developer, I create web pages with UI / UX user interface
           </p>
-          <a href={YashResume} download="" className="button button--flex">
-            Download CV
+          <a
+            href={resumeViewLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="button button--flex"
+          >
+            Download / View CV
             <svg
               class="button__icon"
               xmlns="http://www.w3.org/2000/svg"

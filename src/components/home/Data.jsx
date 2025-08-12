@@ -57,8 +57,8 @@ const Data = () => {
       </h1>
       <h3 className="home__subtitle">MERN Stack Developer</h3>
       <p className="home__description">
-        I'm creative designer based in Bangalore, and I'm very passionate and
-        dedicated to my work.
+        I'm Front-End Developer from Bangalore, dedicated to building clean,
+        modern, and engaging user interfaces.
       </p>
       <a href="#contact" className="button button--flex">
         Say Hello

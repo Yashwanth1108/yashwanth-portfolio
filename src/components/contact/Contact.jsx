@@ -43,7 +43,7 @@ const Contact = () => {
               href="mailto:yashwanthx2000@gmail.com.com"
               className="contact__button"
             >
-              Write me your project
+              Write me
               <i className="bx bx-right-arrow-alt contact__button-icon"></i>
             </a>
           </div>
